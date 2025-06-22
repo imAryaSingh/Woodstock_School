@@ -1,188 +1,262 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Woodstock School | Buxar</title>
-  <meta name="description" content="Woodstock School, Jail Road, Charitravan, Buxar - providing value-based education since 1985.">
-  <meta name="keywords" content="Woodstock School, Buxar, CBSE, School in Buxar, Bihar Education">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woodstock School Buxar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <style>
-    :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #18bc9c;
-      --gradient: linear-gradient(90deg, #2c3e50, #18bc9c);
+    * {
+      box-sizing: border-box;
     }
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      overflow-x: hidden;
     }
-    header {
-      background: var(--gradient);
-      color: white;
-      padding: 1.5rem 0;
+
+    .navbar {
+      background: linear-gradient(to right, #37474f, #90a4ae);
     }
-    header .school-name {
-      font-size: 2rem;
-      font-weight: bold;
+
+    .navbar-brand,
+    .nav-link {
+      color: #fff !important;
     }
-    nav {
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    nav a.nav-link {
-      color: var(--primary-color);
-      font-weight: 600;
-      margin: 0 8px;
-    }
-    .section {
-      padding: 3rem 1rem;
-      background-color: #fff;
-      margin-bottom: 2rem;
-    }
-    .section h2 {
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
-    footer {
-      background: var(--gradient);
-      color: white;
+
+    .hero {
+      background: linear-gradient(to right, #263238, #607d8b);
+      color: #fff;
+      padding: 80px 0;
       text-align: center;
-      padding: 2rem 1rem 1rem;
     }
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 1rem;
+
+    .about,
+    .objectives,
+    .gallery,
+    .contact {
+      padding: 60px 20px;
     }
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
+
+    .objectives i {
+      font-size: 2rem;
+      color: #1976d2;
     }
-    .footer-links a {
-      color: white;
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .gallery .col-md-4 {
+      overflow: hidden;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .footer {
+      background: #37474f;
+      color: #fff;
+      padding: 30px 20px;
+    }
+
+    .footer a {
+      color: #90caf9;
       text-decoration: none;
-      line-height: 1.8;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
-  <header class="text-center">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <div class="school-name">Woodstock School</div>
-      <p>Jail Road, Charitravan, Buxar, Bihar</p>
-    </div>
-  </header>  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Woodstock</a>
+      <a class="navbar-brand" href="#">Woodstock School</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown">About</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#aims">Aims & Objectives</a></li>
-              <li><a class="dropdown-item" href="#general">General Information</a></li>
-              <li><a class="dropdown-item" href="#principal">Principal's Message</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#admission">Admissions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#worksheets">Worksheet</a></li>
-          <li class="nav-item"><a class="nav-link" href="#activities">Activity List</a></li>
-          <li class="nav-item"><a class="nav-link" href="#books">Book List</a></li>
-          <li class="nav-item"><a class="nav-link" href="#timetable">Time Table</a></li>
-          <li class="nav-item"><a class="nav-link" href="#demand">DEMAND SLIP</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">General Information</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Activity List</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Demand Slip</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link text-danger fw-bold" href="#fee">Fee Notice</a></li>
         </ul>
       </div>
     </div>
-  </nav>  <section class="section" id="aims">
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" data-aos="fade-down">
     <div class="container">
-      <h2>Aims & Objectives</h2>
-      <p>Our aim is to offer value-based education focused on nurturing students holistically and promoting intellectual, emotional, and physical growth.</p>
+      <h1 class="display-4 fw-bold">Welcome to Woodstock School</h1>
+      <p class="lead">Nurturing Excellence in Education</p>
     </div>
-  </section>  <section class="section" id="general">
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
     <div class="container">
-      <h2>General Information</h2>
-      <p>Founded in 1985, Woodstock School has limited class sizes to ensure individual attention, modern classrooms, co-curricular focus, and a student-friendly atmosphere.</p>
-    </div>
-  </section>  <section class="section" id="principal">
-    <div class="container">
-      <h2 class="text-center">Principal's Message</h2>
-      <p>The Woodstock School, founded in 1985 by Mrs. Saroj & Dr. R.P. Jaiswal, is marching ahead and has completed thirty five years of its glorious existence...</p>
-      <p class="fw-bold">“Knowledge Enlightens”</p>
-      <p class="text-end mt-4"><strong>Rajay Jaiswal</strong><br>Principal<br>Woodstock School</p>
-    </div>
-  </section>  <section class="section" id="admission">
-    <div class="container">
-      <h2>Admissions</h2>
-      <p>Admission details, eligibility, and process information will be updated here. Please visit the school office for in-person inquiries.</p>
-    </div>
-  </section>  <section class="section" id="worksheets">
-    <div class="container">
-      <h2>Worksheets</h2>
-      <p>Download the latest worksheets by class or subject. [Coming soon]</p>
-    </div>
-  </section>  <section class="section" id="activities">
-    <div class="container">
-      <h2>Activity List</h2>
-      <p>Annual sports, art & craft, cultural day, quizzes, and more activities to encourage student engagement.</p>
-    </div>
-  </section>  <section class="section" id="books">
-    <div class="container">
-      <h2>Book List</h2>
-      <p>View or download the updated academic book list for all classes. [Coming soon]</p>
-    </div>
-  </section>  <section class="section" id="timetable">
-    <div class="container">
-      <h2>Time Table</h2>
-      <p>Check class-wise time tables and schedules. [Coming soon]</p>
-    </div>
-  </section>  <section class="section" id="demand">
-    <div class="container">
-      <h2>Demand Slip</h2>
-      <p>Fee-related demand slips and payment information. [Coming soon]</p>
-    </div>
-  </section>  <section class="section" id="fee">
-    <div class="container">
-      <h2>Fee Notice</h2>
-      <p>Important updates and due dates regarding student fee submissions will be published here.</p>
-    </div>
-  </section>  <section class="section" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>📍 Jail Road, Charitravan, Buxar, Bihar<br>📞 +91-XXXXXXXXXX<br>📧 info@woodstockbuxar.in</p>
-    </div>
-  </section>  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#aims">Aims & Objectives</a></li>
-          <li><a href="#general">General Info</a></li>
-        </ul>
-        <ul>
-          <li><a href="#admission">Admissions</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#books">Book List</a></li>
-        </ul>
-        <ul>
-          <li><a href="#timetable">Time Table</a></li>
-          <li><a href="#demand">Demand Slip</a></li>
-          <li><a href="#fee">Fee Notice</a></li>
-        </ul>
-        <ul>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-up">
+          <h2>Principal's Message</h2>
+          <p>Welcome to Woodstock School, where we believe in shaping young minds to become responsible citizens of
+            tomorrow. Our faculty is dedicated to creating a nurturing and challenging learning environment.</p>
+        </div>
+        <div class="col-md-6 text-end" data-aos="fade-left">
+          <img src="images/rajaysir.jpg" alt="Principal" class="img-fluid rounded shadow" style="height: 400px;" />
+        </div>
       </div>
-      <p>&copy; 2025 Woodstock School, Buxar | Designed & Developed with ❤️</p>
     </div>
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body>
+  </section>
+
+  <!-- Aims & Objectives -->
+  <section class="objectives bg-light" id="objectives">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in">Aims & Objectives</h2>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-10" data-aos="fade-up">
+          <p>We believe that a school is a building with four walls and tomorrow inside it. We therefore strive for
+            excellence in all vistas.</p>
+          <ul>
+            <li>At providing quality education.</li>
+            <li>To propagate patriotic & correct social & ethical values.</li>
+            <li>To ensure proper physical, mental & moral growth of students and to create in them a yearning and zest
+              for learning.</li>
+            <li>To encourage team work & cooperation.</li>
+            <li>To create a special & strong bond of mutual respect & understanding between the students and teachers.
+            </li>
+            <li>To work and create an environment free from fear or favour.</li>
+            <li>Thus the quintessence of our efforts is to make students well read, sensible, balanced & patriotic
+              individuals who can shoulder all responsibilities that the society or nation may place upon them.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4" data-aos="flip-left">
+          <i class="fas fa-graduation-cap"></i>
+          <h5 class="mt-3">Academic Excellence</h5>
+          <p>To foster a culture of learning and critical thinking.</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="flip-up">
+          <i class="fas fa-globe"></i>
+          <h5 class="mt-3">Global Citizenship</h5>
+          <p>Encouraging awareness and appreciation for global cultures and values.</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="flip-right">
+          <i class="fas fa-heart"></i>
+          <h5 class="mt-3">Character Building</h5>
+          <p>Instilling values of integrity, empathy, and discipline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Gallery</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="zoom-in"><img src="images/gallery1.jpg" alt="Gallery Image 1" /></div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100"><img src="images/gallery2.jpg"
+            alt="Gallery Image 2" /></div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200"><img src="images/gallery3.webp"
+            alt="Gallery Image 3" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact bg-light" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-down">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <p><strong>Address:</strong> Jail Road, Charitravan, Buxar, Bihar</p>
+          <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+          <p><strong>Email:</strong> contact@wssbxr.co.in</p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?..." style="border:0;" allowfullscreen
+              loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#objectives">Aims & Objectives</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Fee Notice</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Academic</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Worksheet</a></li>
+            <li><a href="#">Activity List</a></li>
+            <li><a href="#">Book List</a></li>
+            <li><a href="#">Time Table</a></li>
+            <li><a href="#">DEMAND SLIP</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact Info</h5>
+          <p>Jail Road, Charitravan, Buxar, Bihar</p>
+          <p>Phone: +91-XXXXXXXXXX</p>
+          <p>Email: <a href="mailto:contact@wssbxr.co.in">contact@wssbxr.co.in</a></p>
+        </div>
+      </div>
+      <hr style="border-color: rgba(255,255,255,0.2)" />
+      <p class="mb-0">&copy; 2025 Woodstock School, Buxar. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
 </html>
